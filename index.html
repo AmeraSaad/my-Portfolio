@@ -510,7 +510,7 @@
           <ol class="timeline-list">
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">MEAN Stack from NTI</h4>
-              <span>JULY.2024– Present</span>
+              <span>JULY.2024– Aug.2024</span>
             </li>
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">React Web Developing at DEPI</h4>
@@ -543,237 +543,198 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
+  <article class="portfolio" data-page="portfolio">
+  
+    <header>
+      <h2 class="h2 article-title">Portfolio</h2>
+    </header>
+  
+    <section class="projects">
+  
+      <!-- Filter List -->
+      <ul class="filter-list">
+        <li class="filter-item">
+          <button class="active" data-filter-btn>All</button>
+        </li>
+        <li class="filter-item">
+          <button data-filter-btn>Frontend</button>
+        </li>
+        <li class="filter-item">
+          <button data-filter-btn>Backend</button>
+        </li>
+        <li class="filter-item">
+          <button data-filter-btn>MERN</button>
+        </li>
+      </ul>
+  
+      <!-- Filter Select Dropdown -->
+      <div class="filter-select-box">
+        <button class="filter-select" data-select>
+          <div class="select-value" data-selecct-value>Select category</div>
+          <div class="select-icon">
+            <ion-icon name="chevron-down"></ion-icon>
           </div>
+        </button>
+  
+        <ul class="select-list">
+          <li class="select-item">
+            <button data-select-item>All</button>
+          </li>
+          <li class="select-item">
+            <button data-select-item>Frontend</button>
+          </li>
+          <li class="select-item">
+            <button data-select-item>Backend</button>
+          </li>
+          <li class="select-item">
+            <button data-select-item>MERN</button>
+          </li>
+        </ul>
+      </div>
+  
+      <!-- Project List -->
+      <ul class="project-list">
 
-          <ul class="project-list">
+          <!-- Backend Project -->
+        <li class="project-item active" data-filter-item data-category="backend">
+          <a href="#">
+            <figure class="project-img">
+              <div class="project-item-icon-box" onclick="window.open('https://github.com/AmeraSaad/book_store_api', '_blank')">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+              <img src="./assets/imeges/book-api.png" alt="Backend Project" loading="lazy">
+            </figure>
+            <h3 class="project-title">book_store_api</h3>
+            <p class="project-category">Backend</p>
+            <p class="project-category">Node.js - MongoDB - Express.js</p>
+          </a>
+        </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+        <!-- MERN Project -->
+        <li class="project-item active" data-filter-item data-category="mern">
+          <a href="#">
+            <figure class="project-img">
+              <div class="project-item-icon-box" onclick="window.open('https://github.com/AmeraSaad/Chat-App', '_blank')">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+              <img src="./assets/imeges/chatApp.png" alt="MERN Project" loading="lazy">
+            </figure>
+            <h3 class="project-title">Chat App</h3>
+            <p class="project-category">React.js - Node.js - MongoDB - Express.js</p>
+          </a>
+        </li>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+        <li class="project-item active" data-filter-item data-category="mern">
+          <a href="#">
+            <figure class="project-img">
+              <div class="project-item-icon-box" onclick="window.open('https://github.com/linkedinCloneDepi/LinkedinClone', '_blank')">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+              <img src="./assets/imeges/linkedin.png" alt="MERN Project" loading="lazy">
+            </figure>
+            <h3 class="project-title">Linkedin Clone</h3>
+            <p class="project-category">React.js - Node.js - MongoDB - Express.js - Tailwind</p>
+          </a>
+        </li>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
+        <!-- Frontend Project -->
 
-                <h3 class="project-title">Finance</h3>
+        <li class="project-item active" data-filter-item data-category="frontend">
+          <a href="#">
+            <figure class="project-img">
+              <div class="project-item-icon-box"
+                onclick="window.open('https://github.com/AmeraSaad/reactjs-faraway-todo', '_blank')">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+              <img src="./assets/imeges/far-away.png" alt="Frontend Project 1" loading="lazy">
+            </figure>
+            <h3 class="project-title">Faraway ToDo List</h3>
+            <p class="project-category">Frontend</p>
+            <p class="project-category">React - Tailwind</p>
+          </a>
+        </li>
+        
+        <li class="project-item active" data-filter-item data-category="frontend">
+          <a href="#">
+            <figure class="project-img">
+              <div class="project-item-icon-box"
+                onclick="window.open('https://github.com/AmeraSaad/react-crud', '_blank')">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+              <img src="./assets/imeges/react-Crud.png" alt="Frontend Project 1" loading="lazy">
+            </figure>
+            <h3 class="project-title">React Crud System</h3>
+            <p class="project-category">Frontend</p>
+            <p class="project-category">React - Tailwind</p>
+          </a>
+        </li>
 
-                <p class="project-category">Web development</p>
+        <li class="project-item active" data-filter-item data-category="frontend">
+          <a href="#">
+            <figure class="project-img">
+              <div class="project-item-icon-box"
+                onclick="window.open('https://marketplace-e-commerce-lfyiqaqrh-amerasaads-projects.vercel.app/', '_blank')">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+              <img src="./assets/imeges/markplace.png" alt="Frontend Project 1" loading="lazy">
+            </figure>
+            <h3 class="project-title">markplace</h3>
+            <p class="project-category">Frontend</p>
+            <p class="project-category">React - Tailwind</p>
+          </a>
+        </li>
 
-              </a>
-            </li>
+        <li class="project-item active" data-filter-item data-category="frontend">
+          <a href="#">
+            <figure class="project-img">
+              <div class="project-item-icon-box"
+                onclick="window.open('https://amerasaad.github.io/Bootstrap_Practice/Bondi_/', '_blank')">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+              <img src="./assets/imeges/bondi.png" alt="Frontend Project 1" loading="lazy">
+            </figure>
+            <h3 class="project-title">Bondi_</h3>
+            <p class="project-category">Frontend</p>
+            <p class="project-category">HTML - CSS - Bootstrap</p>
+          </a>
+        </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+        <li class="project-item active" data-filter-item data-category="frontend">
+          <a href="#">
+            <figure class="project-img">
+              <div class="project-item-icon-box"
+                onclick="window.open('https://amerasaad.github.io/Bootstrap_Practice/Angora/', '_blank')">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+              <img src="./assets/imeges/anagora.png" alt="Frontend Project 1" loading="lazy">
+            </figure>
+            <h3 class="project-title">Angora</h3>
+            <p class="project-category">Frontend</p>
+            <p class="project-category">HTML - CSS - Bootstrap</p>
+          </a>
+        </li>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+        <li class="project-item active" data-filter-item data-category="frontend">
+          <a href="#">
+            <figure class="project-img">
+              <div class="project-item-icon-box"
+                onclick="window.open('https://amerasaad.github.io/Personal-Blog-Website/', '_blank')">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+              <img src="./assets/imeges/blog.png" alt="Frontend Project 1" loading="lazy">
+            </figure>
+            <h3 class="project-title">Personal Blog</h3>
+            <p class="project-category">Frontend</p>
+            <p class="project-category">HTML - CSS</p>
+          </a>
+        </li>
+  
+      </ul>
+  
+    </section>
+  
+  </article>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
 
 
 
